@@ -12,8 +12,6 @@ def snail(snail_map):
             array.append(snail_map[j][i])
             return array
         while i<side-1:
-            if cnt==number:
-                return array
             cnt+=1
             array.append(snail_map[j][i])
             i+=1
@@ -21,8 +19,6 @@ def snail(snail_map):
             array.append(snail_map[j][i])
             return array
         while j<side-1:
-            if cnt==number:
-                return array
             cnt+=1
             array.append(snail_map[j][i])
             j+=1
@@ -30,8 +26,6 @@ def snail(snail_map):
             array.append(snail_map[j][k])
             return array
         while k>circle:
-            if cnt==number:
-                return array
             cnt+=1
             array.append(snail_map[j][k])
             k-=1
@@ -39,13 +33,9 @@ def snail(snail_map):
             array.append(snail_map[l][k])
             return array
         while l>circle:
-            if cnt==number:
-                return array
             cnt+=1
             array.append(snail_map[l][k])
             l-=1
-        if cnt==number:
-            return array
         side-=1
         circle+=1
         
