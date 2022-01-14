@@ -8,10 +8,10 @@ def snail(snail_map):
         return array
     while True:
         #Przechodzi bo bokach, aż nie zostanie na boku jednego miejsca. Od tego miejsca kolejny bok zaczyna żeby na końcu zrobić koło. Przechodzi do kolejnego kwadratu o 1 w prawo/dół (circle) i 1 w lewo/górę (side)
-        I I I J
-        L I J J
-        L L K J
-        L K K K
+#       I I I J
+#       L I J J
+#       L L K J
+#       L K K K
         i,j,k,l=circle,circle,side-1,side-1
         if (cnt+1)==number:
             array.append(snail_map[j][i])
