@@ -7,10 +7,16 @@ def snail(snail_map):
     if not snail_map[0]:
         return array
     while True:
+        #Przechodzi bo bokach, aż nie zostanie na boku jednego miejsca. Od tego miejsca kolejny bok zaczyna żeby na końcu zrobić koło. Przechodzi do kolejnego kwadratu o 1 w prawo/dół (circle) i 1 w lewo/górę (side)
+        I I I J
+        L I J J
+        L L K J
+        L K K K
         i,j,k,l=circle,circle,side-1,side-1
         if (cnt+1)==number:
             array.append(snail_map[j][i])
             return array
+        #Górny bok
         while i<side-1:
             cnt+=1
             array.append(snail_map[j][i])
@@ -18,6 +24,7 @@ def snail(snail_map):
         if (cnt+1)==number:
             array.append(snail_map[j][i])
             return array
+        #Prawy bok
         while j<side-1:
             cnt+=1
             array.append(snail_map[j][i])
@@ -25,6 +32,7 @@ def snail(snail_map):
         if (cnt+1)==number:
             array.append(snail_map[j][k])
             return array
+        #Dolny bok
         while k>circle:
             cnt+=1
             array.append(snail_map[j][k])
@@ -32,6 +40,7 @@ def snail(snail_map):
         if (cnt+1)==number:
             array.append(snail_map[l][k])
             return array
+        #Lewy bok
         while l>circle:
             cnt+=1
             array.append(snail_map[l][k])
@@ -49,6 +58,19 @@ array = [[1,2,3,4,5,6, 7],
 
 string=snail(array)
 print(string)
+
+#Rozwiązanie z użyciem nampy, niefektywne, bo żongluje całą tablicą.
+#import numpy as np
+
+#def snail(array):
+#    m = []
+#    array = np.array(array)
+#    while len(array) > 0:
+#        m += array[0].tolist()
+#        array = np.rot90(array[1:])
+#    return m
+
+
 """
 Given an n x n array, return the array elements arranged from outermost elements to the middle element, traveling clockwise.
 
