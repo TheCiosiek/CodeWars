@@ -1,8 +1,11 @@
 def snail(snail_map):
+    #dlugość boku
     side=len(snail_map)
+    #ilość wszystkich wartości
     number=side**2
     array=[]
     circle=0
+    #zlicza ilość wykonań, żeby był równy ilości wartości
     cnt=0
     if not snail_map[0]:
         return array
