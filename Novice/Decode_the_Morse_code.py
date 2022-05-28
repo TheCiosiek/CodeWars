@@ -24,6 +24,21 @@ def decodeMorse(morse_code):
             pass
     return morse_code_decode
 
+
+
+
+
+# def test_and_print(got, expected):
+#     if got == expected:
+#         test.expect(True)
+#     else:
+#         print("<pre style='display:inline'>Got {}, expected {}</pre>".format(got, expected))
+#         test.expect(False)
+
+# test.describe("Example from description")
+# test_and_print(decodeMorse('.... . -.--   .--- ..- -.. .'), 'HEY JUDE')
+
+
 """
 In this kata you have to write a simple Morse code decoder. While the Morse code is now mostly superseded by voice and digital data communication channels, it still has its use in some applications around the world.
 

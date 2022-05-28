@@ -20,7 +20,17 @@ print(sum_of_intervals([(1, 5), (1, 5)]))
 print(sum_of_intervals([(1, 4), (7, 10), (3, 5)]))
 
 
+# from solution import sum_of_intervals
+# import codewars_test as test
 
+# @test.describe("Fixed tests")
+# def fixed_tests():
+#     @test.it("Tests")
+#     def it_1():
+#         test.assert_equals(sum_of_intervals([(1, 5)]), 4)
+#         test.assert_equals(sum_of_intervals([(1, 5), (6, 10)]), 8)
+#         test.assert_equals(sum_of_intervals([(1, 5), (1, 5)]), 4)
+#         test.assert_equals(sum_of_intervals([(1, 4), (7, 10), (3, 5)]), 7)
 
 # Intervals are represented by a pair of integers in the form of an array. The first value of the interval will always be less than the second value. Interval example: [1, 5] is an interval from 1 to 5. The length of this interval is 4.
 # Overlapping Intervals
