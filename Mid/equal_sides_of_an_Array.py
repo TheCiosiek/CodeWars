@@ -17,7 +17,7 @@ def find_even_index(arr):
     else:
         return -1
 
-find_even_index([20,10,-80,10,10,15,35])
+print(find_even_index([-3,2,1,0]))
 
 # You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N. If there is no index that would make this happen, return -1.
 
