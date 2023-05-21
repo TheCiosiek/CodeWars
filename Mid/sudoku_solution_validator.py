@@ -14,7 +14,7 @@ def valid_solution(board):
             if board[rows_i][rows_j] == 0:
                 print(False)
                 return False
-            elif check_rows_array[board[rows_i][rows_j]] == 1 or check_columns_array[board[columns_j][columns_i]] == 1:
+            elif check_rows_array                           [board[rows_i][rows_j]] == 1 or check_columns_array[board[columns_j][columns_i]] == 1:
                 print(False)
                 return False
             else: 
